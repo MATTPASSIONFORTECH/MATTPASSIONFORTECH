@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="260" viewBox="0 0 590 260" role="img" aria-label="Pour Over Focus — gamified coffee-shop Pomodoro">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e130c"/>
+      <stop offset="1" stop-color="#120c12"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c98a55"/>
+      <stop offset="1" stop-color="#6b3b1f"/>
+    </linearGradient>
+    <clipPath id="cup"><path d="M430 140 h96 l-10 78 a12 12 0 0 1 -12 10 h-52 a12 12 0 0 1 -12 -10 z"/></clipPath>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .fill { animation: fill 5s ease-in-out infinite; }
+      @keyframes fill { 0% { transform: translateY(80px); } 70%, 100% { transform: translateY(0); } }
+      .steam { fill: none; stroke: #f4d9bf; stroke-opacity: .5; stroke-width: 3; stroke-linecap: round; animation: rise 2.6s ease-in-out infinite; }
+      @keyframes rise { 0% { opacity: 0; transform: translateY(8px); } 50% { opacity: 1; } 100% { opacity: 0; transform: translateY(-10px); } }
+      @media (prefers-reduced-motion: reduce) { .fill, .steam { animation: none; } }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="588" height="258" rx="18" fill="url(#bg)" stroke="#ffb46b" stroke-opacity=".55" stroke-width="2"/>
+
+  <text x="32" y="48" class="mono" font-size="12" fill="#ffb46b" letter-spacing="3">VANILLA JS · PWA</text>
+  <text x="30" y="88" class="sans" font-size="32" font-weight="800" fill="#fff">Pour Over Focus</text>
+  <text x="32" y="118" class="sans" font-size="16" fill="#ecd9c7">A gamified coffee-shop Pomodoro: order a</text>
+  <text x="32" y="140" class="sans" font-size="16" fill="#ecd9c7">drink, focus, earn cash, unlock café themes.</text>
+
+  <g class="mono" font-size="12" fill="#b99a80">
+    <text x="32" y="190">4,800 drink combos · offline-first</text>
+    <text x="32" y="210">zero dependencies · installable</text>
+    <text x="32" y="240" fill="#ffb46b">▶ live app</text>
+  </g>
+
+  <!-- timer ring -->
+  <circle cx="478" cy="80" r="34" fill="none" stroke="#3a2a22" stroke-width="6"/>
+  <circle cx="478" cy="80" r="34" fill="none" stroke="#ffb46b" stroke-width="6" stroke-linecap="round" stroke-dasharray="160 214" transform="rotate(-90 478 80)"/>
+  <text x="478" y="86" text-anchor="middle" class="mono" font-size="15" fill="#fff">25:00</text>
+
+  <!-- cup -->
+  <path class="steam" d="M462 132 q -6 -8 0 -16"/>
+  <path class="steam" d="M494 132 q -6 -8 0 -16" style="animation-delay:.8s"/>
+  <path d="M430 140 h96 l-10 78 a12 12 0 0 1 -12 10 h-52 a12 12 0 0 1 -12 -10 z" fill="#f3ece4"/>
+  <g clip-path="url(#cup)"><rect class="fill" x="420" y="150" width="120" height="90" fill="url(#coffee)"/></g>
+  <path d="M526 158 a18 18 0 0 1 0 36" fill="none" stroke="#f3ece4" stroke-width="7"/>
+</svg>
